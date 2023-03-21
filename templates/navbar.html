@@ -1,0 +1,31 @@
+
+<nav class="navbar navbar-expand-sm navbar-black bg-black ">
+  <div class="container-fluid container">
+     <img src="{{ url_for('static', filename='logi.png')}} " width="130px">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-2 mb-2 mb-lg--2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" style="color: white" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <i class='far fa-comment' style='font-size:36px'></i>
+            <a class="nav-link" style="color: white" href="/contato">Contato</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" style="color: white" aria-expanded="false">
+            Esolha uma liga
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" style="color: black" href="/brs"> Brasileirão </a></li>
+            <li><a class="dropdown-item" style="color: black" href="/pml"> Premier League </a></li>
+            <li><a class="dropdown-item" style="color: black" href="/slc"> Seleções </a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
+        <button style="background-color:Orange;" type="submit">Procurar</button>
+      </form>
+    </div>
+  </div>
+</nav>

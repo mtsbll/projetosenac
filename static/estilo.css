@@ -1,0 +1,58 @@
+.borda {
+  border-radius: 10px;
+}
+
+
+.trans {
+  transition: width 2s, height 4s;
+}
+
+.trans:hover {
+  width: 650px;
+  height: 650px;
+}
+
+.col-md-3 {
+    position: relative;
+}
+
+.col-md-3 .pri {
+    visibility: visible;
+    opacity: 1;
+    height: 250px;
+}
+
+.col-md-3 .seg {
+    visibility: hidden;
+
+    position:absolute;
+    top:0;
+    left:0;
+}
+.col-md-3:hover .seg{
+    visibility: visible;
+    opacity: 1;
+    height: 250px;
+}
+
+.col-md-3:hover  .pri {
+   visibility: hidden;
+    position:absolute;
+}
+
+/* teste carrossel*/
+
+.borderimg1 {
+  margin: 0 auto;
+
+}
+
+.estilo {
+    width: 18em;
+}
+
+.center-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
